@@ -1,3 +1,5 @@
+![QualityCluster](./img/qualitycluster.png)
+
 # gauge-taiko
 
 [Gauge-Link](https://gauge.org)
@@ -57,3 +59,7 @@ click($("//input[@name='button_name']")) // XPath selector
 ```
 gauge init js
 ```
+
+
+Powered by
+[boiman.solutions](./img/boiman.solutions.png)
