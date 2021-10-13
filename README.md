@@ -1,17 +1,18 @@
 # gauge-taiko
 
-[Gauge-Link]<https://gauge.org>
-[Gauge Installation]<https://docs.gauge.org/getting_started/installing-gauge.html?os=macos&language=javascript&ide=vscode>
+[Gauge-Link](https://gauge.org)
+
+[Gauge Installation](https://docs.gauge.org/getting_started/installing-gauge.html?os=macos&language=javascript&ide=vscode)
 
 ## Install gauge on a mac
 ```
 brew install gauge
 ```
-[Gauge-Extencion-VSC]<https://marketplace.visualstudio.com/items?itemName=getgauge.gauge>
+[Gauge-Extencion-VSC](https://marketplace.visualstudio.com/items?itemName=getgauge.gauge)
 
 
 ## Install taiko in a mac
-<https://taiko.dev>
+https://taiko.dev
 
 ```
 npm install -g taiko
