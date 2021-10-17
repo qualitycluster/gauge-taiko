@@ -6,8 +6,12 @@ To execute this specification, use
 npm test
 ```
 
+### TestVideo
+<img src="../../TestVideo.gif" width="600">
+
 This is a context step that runs before every scenario
 * Goto webpage: "qualitycluster.de"
+* Screencast start "TestVideo"
 
 ## Navigating in QualityCluster.de
 * Click on "Wer wir sind?"
@@ -30,4 +34,5 @@ This is a context step that runs before every scenario
 * Goto webpage: "boiman.solutions"
 * Make a screenshot
 ___
+* Screencast stop
 * Clear local storage
