@@ -6,9 +6,9 @@ name: Gauge-Taiko-Test
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main ]
+    branches: [ development ]
   pull_request:
-    branches: [ main ]
+    branches: [ development ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -47,3 +47,39 @@ jobs:
       - name: Run Tests
         run: |
           gauge run --tags="gauge-test & !Ignore"
+
+
+
+      - name: SaveDateTime
+        if: always()  
+        run: echo "currentTimestamp=$(date +'%Y-%m-%dT%H:%M:%S')" >> $GITHUB_ENV
+
+      - name: SaveArtifact
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: Gauge-Test-Report
+          path: reports/
+
+
+      - name: Upload logs
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: tests-logs
+          path: logs
+
+
+      - name: Deploy to GitHub Pages
+        if: always()
+        uses: JamesIves/github-pages-deploy-action@4.1.5
+        with:
+          branch: gh-pages
+          folder: reports
+          target-folder: reports/${{ env.currentTimestamp }}
+
+      - name: Link to Report
+        if: always()
+        run: |
+          echo "::group::Link to Report"
+          echo "https://qualitycluster.github.io/gauge-taiko/reports/${{ env.currentTimestamp }}/html-report/index.html"
