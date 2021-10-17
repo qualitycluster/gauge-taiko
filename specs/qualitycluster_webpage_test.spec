@@ -18,7 +18,6 @@ This is a context step that runs before every scenario
 * Click on "Manifesto"
 * Highlightening "One Bug Policy"
 * Open a new tab with "google.com"
-* Click on "Ich stimme zu"
 * Write "qualitycluster.de" into a textbox
 * Press Enter
 * Click on "Manifesto"
