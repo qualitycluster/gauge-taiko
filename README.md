@@ -62,4 +62,4 @@ gauge init js
 
 
 Powered by
-[boiman.solutions](./img/boiman.solutions.png)
+![boiman.solutions](./img/boiman.solutions.png)
