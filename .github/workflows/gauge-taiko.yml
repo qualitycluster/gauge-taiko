@@ -38,6 +38,12 @@ jobs:
         run: |
           npm install
           
+      - name: Install Gauge
+        run: |
+          npm install -g @getgauge/cli
+        shell: bash
+        
+          
       - name: Run Tests
         run: |
           gauge run --tags="gauge-test & !Ignore"
