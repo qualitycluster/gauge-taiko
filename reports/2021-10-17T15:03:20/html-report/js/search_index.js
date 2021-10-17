@@ -1,0 +1,1 @@
+var index = {"Tags":{"gauge-test":["specs/qualitycluster_webpage_test.html"]},"Specs":{"The QualityCluster Example":["specs/qualitycluster_webpage_test.html"]}};
