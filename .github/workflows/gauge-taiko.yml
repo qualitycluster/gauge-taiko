@@ -59,7 +59,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: Gauge-Test-Report
-          path: ${{ env.TEST_REPORT_FOLDER }}/reports/
+          path: reports/
 
 
       - name: Upload logs
@@ -67,7 +67,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: tests-logs
-          path: ${{ env.TEST_REPORT_FOLDER }}/logs
+          path: logs
 
 
       - name: Deploy to GitHub Pages
@@ -75,12 +75,11 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
           branch: gh-pages
-          folder: ${{ env.TEST_REPORT_FOLDER }}/reports
-          token: ${{ secrets.GITHUB_TOKEN }}
+          folder: reports
           target-folder: reports/${{ env.currentTimestamp }}
 
       - name: Link to Report
         if: always()
         run: |
           echo "::group::Link to Report"
-          echo "https://dvag.github.io/vp-digital-integration-test/reports/${{ env.currentTimestamp }}/html-report/index.html"
+          echo "https://qualitycluster.github.io/gauge-taiko/reports/${{ env.currentTimestamp }}/html-report/index.html"
