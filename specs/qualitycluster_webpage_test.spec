@@ -1,5 +1,5 @@
 # The QualityCluster Example
-
+Tags: gauge-test
 
 To execute this specification, use
 ```
