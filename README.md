@@ -60,6 +60,15 @@ click($("//input[@name='button_name']")) // XPath selector
 gauge init js
 ```
 
+## Plugins
+if u use screencast plugin
+
+```
+npm i taiko-screencast
+maybe
+npm install --save-dev taiko-screencast
+```
+
 
 Powered by
 ![boiman.solutions](./img/boiman.solutions.png)
