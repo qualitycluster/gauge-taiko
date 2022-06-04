@@ -55,11 +55,11 @@ step("Clear local storage", async function() {
 // screnncast recording 4 spec
 /*
 <img src="../../dataName.gif" width="600">
-*/
-step("Screencast start <DataName>", async function(dataName) {
-	await screencast.startScreencast('reports/html-report/' + dataName + '.gif');
-});
+// */
+// step("Screencast start <DataName>", async function(dataName) {
+// 	await screencast.startScreencast('reports/html-report/' + dataName + '.gif');
+// });
 
-step("Screencast stop", async function() {
-	await screencast.stopScreencast();
-});
+// step("Screencast stop", async function() {
+// 	await screencast.stopScreencast();
+// });

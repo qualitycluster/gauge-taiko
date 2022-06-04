@@ -18,15 +18,15 @@ This is a context step that runs before every scenario
 * Click on "Manifesto"
 * Highlightening "One Bug Policy"
 * Open a new tab with "google.com"
+* Click on "Ich stimme zu"
 * Write "qualitycluster.de" into a textbox
 * Press Enter
 * Click on "Manifesto"
 * Make a screenshot
-* Close tab
 * Open a new tab with "wecation.app"
 * Click on "Features"
 * Make a screenshot
-* Close tab
+ Close tab
 * Goto webpage: "boiman.solutions"
 * Make a screenshot
 ___

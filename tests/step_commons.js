@@ -23,7 +23,6 @@ const {
     timeField, 
     scrollTo, 
     scrollDown, 
-    screencast, 
     highlight, 
     mouseAction, 
     select, 
